@@ -1,0 +1,3 @@
+[submodule "lib/mujoco-menagerie"]
+	path = lib/mujoco-menagerie
+	url = https://github.com/google-deepmind/mujoco_menagerie.git
