@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  anymal-dev:
+    build: .
+    image: anymal-dev:latest
+    volumes:
+      - ../:/home/workspace
+    working_dir: /home/workspace
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
